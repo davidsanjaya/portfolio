@@ -2,7 +2,7 @@ import { Profile } from "@/types/profile";
 
 export const profile: Profile = {
   hero: {
-    greeting: "Hi, I'm",
+    greeting: "👋 Hi, I'm",
 
     name: "David Sanjaya",
 
@@ -33,6 +33,20 @@ export const profile: Profile = {
       name: "LinkedIn",
 
       url: "https://linkedin.com/in/david-sanjaya-142430a4",
+    },
+  ],
+  statistics: [
+    {
+      value: "11+",
+      label: "Years Experience",
+    },
+    {
+      value: "20+",
+      label: "Projects",
+    },
+    {
+      value: "5",
+      label: "Companies",
     },
   ],
 };

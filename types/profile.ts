@@ -3,6 +3,11 @@ export interface SocialLink {
   url: string;
 }
 
+export interface Statistics {
+  value: string;
+  label: string;
+}
+
 export interface ContactInfo {
   location: string;
   email: string;
@@ -27,4 +32,5 @@ export interface Profile {
   contact: ContactInfo;
 
   socialLinks: SocialLink[];
+  statistics: Statistics[];
 }
