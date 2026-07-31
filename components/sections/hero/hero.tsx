@@ -10,27 +10,30 @@ interface HeroProps {
 
 export function Hero({ data }: HeroProps) {
   return (
-    <Section className="min-h-screen flex bg-black items-center">
+    <Section className="min-h-screen flex items-center">
       <Container>
-        <div className="max-w-3xl gap-3 flex flex-col">
-          <p className="text-lg text-white">{data.hero.greeting}</p>
+        <div className="max-w-5xl space-y-3">
+          <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
+            {data.hero.greeting}
+          </p>
 
-          <h1 className="text-6xl font-bold tracking-tight text-white">
+          <h1 className="text-7xl font-black tracking-tight text-foreground">
             {data.hero.name}
           </h1>
 
-          <h2 className="text-3xl font-medium text-zinc-700">
+          <h2 className="text-3xl font-semibold text-primary">
             {data.hero.title}
           </h2>
-          <p className="text-2xl font-medium text-zinc-700">
+
+          <p className="text-xl font-medium text-muted-foreground">
             {data.hero.tagline}
           </p>
 
-          <p className="text-xl max-w-2xl text-zinc-700 leading-relaxed">
+          <p className="max-w-3xl text-lg leading-8 text-muted-foreground">
             {data.hero.description}
           </p>
 
-          <HeroActions socialLinks={data.socialLinks} />
+          <HeroActions actions={data.actions} />
 
           <HeroStats statistics={data.statistics} />
         </div>

@@ -5,9 +5,35 @@ interface StatisticCardProps {
 
 export function StatisticCard({ value, label }: StatisticCardProps) {
   return (
-    <div className="rounded-xl border p-6">
-      <h3 className="text-white text-2xl font-bold">{value}</h3>
-      <p className="text-white text-xl">{label}</p>
+    <div
+      className="
+        rounded-2xl
+        border
+        border-border
+        bg-card
+        p-8
+    "
+    >
+      <h3
+        className="
+        text-5xl
+        font-black
+        text-card-foreground
+    "
+      >
+        {value}
+      </h3>
+      <p
+        className="
+        mt-2
+        text-sm
+        uppercase
+        tracking-wide
+        text-muted-foreground
+    "
+      >
+        {label}
+      </p>
     </div>
   );
 }

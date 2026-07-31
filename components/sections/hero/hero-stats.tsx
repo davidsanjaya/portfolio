@@ -1,6 +1,5 @@
 import { StatisticCard } from "./statistic-card";
 import { Profile } from "@/types/profile";
-import { Button } from "@/components/shared/button";
 
 interface HeroStatsProps {
   statistics: Profile["statistics"];

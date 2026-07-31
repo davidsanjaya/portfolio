@@ -1,6 +1,17 @@
-export interface SocialLink {
-  name: string;
-  url: string;
+export type ButtonVariant =
+  | "primary"
+  | "secondary"
+  | "outline"
+  | "ghost"
+  | "link";
+
+export interface Actions {
+  label: string;
+  href: string;
+  variant?: ButtonVariant;
+  icon?: string;
+  download: boolean;
+  target?: "_self" | "_blank";
 }
 
 export interface Statistics {
@@ -31,6 +42,6 @@ export interface Profile {
 
   contact: ContactInfo;
 
-  socialLinks: SocialLink[];
+  actions: Actions[];
   statistics: Statistics[];
 }

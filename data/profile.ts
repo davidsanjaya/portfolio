@@ -22,17 +22,29 @@ export const profile: Profile = {
     phone: "+62 859-5645-4998",
   },
 
-  socialLinks: [
+  actions: [
     {
-      name: "GitHub",
-
-      url: "https://github.com/davidsanjaya",
+      label: "Download Resume",
+      href: "/resume.pdf",
+      variant: "primary",
+      icon: "download",
+      download: true,
     },
-
     {
-      name: "LinkedIn",
-
-      url: "https://linkedin.com/in/david-sanjaya-142430a4",
+      label: "GitHub",
+      href: "https://github.com/davidsanjaya",
+      variant: "secondary",
+      icon: "github",
+      download: false,
+      target: "_blank",
+    },
+    {
+      label: "LinkedIn",
+      href: "https://linkedin.com/in/david-sanjaya-142430a4",
+      variant: "secondary",
+      icon: "linkedin",
+      download: false,
+      target: "_blank",
     },
   ],
   statistics: [

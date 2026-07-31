@@ -82,27 +82,31 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  --section-spacing: 8rem;
-
-  --container-width: 1280px;
-
-  --hero-title: 4rem;
-
-  --transition: 200ms;
-
   /* Layout */
 
-  --container: 1280px;
+  --container-width: 1280px;
+  --section-spacing: 8rem;
+
+  /* Typography */
+
+  --hero-title-size: 4rem;
 
   /* Radius */
 
   --radius-lg: 1rem;
 
-  /* Animation */
+  /* Motion */
 
   --transition-fast: 150ms;
-
   --transition-normal: 250ms;
+}
+
+[data-density="compact"] {
+  --section-spacing: 5rem;
+}
+
+[data-density="comfortable"] {
+  --section-spacing: 10rem;
 }
 
 .dark {

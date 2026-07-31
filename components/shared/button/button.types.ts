@@ -1,6 +1,19 @@
+export type ButtonVariant =
+  | "primary"
+  | "secondary"
+  | "outline"
+  | "ghost"
+  | "link";
+
+export type ButtonSize = "sm" | "md" | "lg";
+
 export interface ButtonProps {
   children: React.ReactNode;
   href?: string;
-  variant?: "primary" | "secondary";
-  target?: "_blank" | "_self";
+  variant?: ButtonVariant;
+  target?: "_self" | "_blank";
+  download?: boolean;
+  icon?: React.ReactNode;
+  className?: string;
+  size?: ButtonSize;
 }
