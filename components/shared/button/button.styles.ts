@@ -4,11 +4,11 @@ items-center
 justify-center
 gap-2
 rounded-xl
-px-6
-py-3
-text-lg
 font-medium
 transition-colors
+duration-200
+disabled:pointer-events-none
+disabled:opacity-50
 `;
 
 export const buttonStyles = {

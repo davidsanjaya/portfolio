@@ -1,48 +1,77 @@
 import Link from "next/link";
 import { ButtonProps } from "./button.types";
 import { buttonStyles, buttonSizes } from "./button.styles";
+import { Icon } from "../icon";
+import { Spinner } from "../spinner/spinner";
+import { cn } from "@/lib/utils";
 
 export function Button({
   children,
   href,
-  variant,
-  size,
   target,
-  icon,
-  className,
   download,
+  variant = "primary",
+  size = "md",
+  loading = false,
+  disabled = false,
+  leftIcon,
+  rightIcon,
+  className,
+  ...props
 }: ButtonProps) {
-  const isExternalNavigation = target === "_blank";
-  const buttonClassName = `${buttonStyles[variant ?? "primary"]} ${buttonSizes[size ?? "md"]} ${className ?? ""}`;
+  const isDisabled = disabled || loading;
+  const buttonClassName = `${buttonStyles[variant]} ${buttonSizes[size]} ${className ?? ""} `;
   const content = (
-    <>
-      {icon && <span>{icon}</span>}
+    <span
+      className={cn(
+        "flex items-center justify-center gap-2",
+        loading && "opacity-0",
+      )}
+    >
+      {leftIcon && <Icon name={leftIcon} />}
+
       <span>{children}</span>
-    </>
+
+      {rightIcon && <Icon name={rightIcon} />}
+    </span>
   );
 
-  if (isExternalNavigation) {
+  if (href && target === "_blank") {
     return (
       <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={buttonClassName}
         download={download}
+        className={buttonClassName}
+        aria-disabled={isDisabled}
+        onClick={isDisabled ? (e) => e.preventDefault() : undefined}
       >
         {content}
       </a>
     );
   }
 
+  if (href) {
+    return (
+      <Link
+        href={href}
+        target={target}
+        download={download}
+        className={buttonClassName}
+      >
+        {content}
+      </Link>
+    );
+  }
+
   return (
-    <Link
-      href={href ?? "#"}
-      target={target}
-      className={buttonClassName}
-      download={download}
-    >
-      {content}
-    </Link>
+    <button className={buttonClassName} disabled={isDisabled} {...props}>
+      {loading && (
+        <span className="absolute inset-0 flex items-center justify-center">
+          <Spinner />
+        </span>
+      )}
+    </button>
   );
 }
