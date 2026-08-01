@@ -5,11 +5,13 @@ export type ButtonVariant =
   | "ghost"
   | "link";
 
+export type IconName = "download" | "github" | "linkedin";
+
 export interface Actions {
   label: string;
   href: string;
   variant?: ButtonVariant;
-  icon?: string;
+  icon?: IconName;
   download: boolean;
   target?: "_self" | "_blank";
 }

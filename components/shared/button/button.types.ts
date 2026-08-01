@@ -1,3 +1,6 @@
+import { ButtonHTMLAttributes } from "react";
+import { IconName } from "../icon";
+
 export type ButtonVariant =
   | "primary"
   | "secondary"
@@ -7,13 +10,20 @@ export type ButtonVariant =
 
 export type ButtonSize = "sm" | "md" | "lg";
 
-export interface ButtonProps {
-  children: React.ReactNode;
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   href?: string;
+
+  target?: "_blank" | "_self" | "_parent" | "_top";
+
+  download?: boolean | string;
+
   variant?: ButtonVariant;
-  target?: "_self" | "_blank";
-  download?: boolean;
-  icon?: React.ReactNode;
-  className?: string;
+
   size?: ButtonSize;
+
+  loading?: boolean;
+
+  leftIcon?: IconName;
+
+  rightIcon?: IconName;
 }
