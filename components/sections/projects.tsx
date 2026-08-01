@@ -1,4 +1,4 @@
-import { Section } from "@/components/ui/section";
+import { Section } from "@/components/shared/section/section";
 import { Project } from "@/types/projects";
 import { SectionTitle } from "../ui/section-title";
 

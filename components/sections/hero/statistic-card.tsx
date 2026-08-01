@@ -1,3 +1,5 @@
+import { Card } from "@/components/shared/card/card";
+
 interface StatisticCardProps {
   value: string;
   label: string;
@@ -5,15 +7,7 @@ interface StatisticCardProps {
 
 export function StatisticCard({ value, label }: StatisticCardProps) {
   return (
-    <div
-      className="
-        rounded-2xl
-        border
-        border-border
-        bg-card
-        p-8
-    "
-    >
+    <Card padding="md" hover variant="outlined">
       <h3
         className="
         text-5xl
@@ -34,6 +28,6 @@ export function StatisticCard({ value, label }: StatisticCardProps) {
       >
         {label}
       </p>
-    </div>
+    </Card>
   );
 }

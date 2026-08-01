@@ -1,4 +1,4 @@
-import { Section } from "@/components/ui/section";
+import { Section } from "@/components/shared/section/section";
 import { SkillCategory } from "@/types/skills";
 import { SectionTitle } from "../ui/section-title";
 

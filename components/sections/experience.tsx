@@ -1,5 +1,5 @@
 import { Experience as ExperienceData } from "@/types/experience";
-import { Section } from "@/components/ui/section";
+import { Section } from "@/components/shared/section/section";
 import { SectionTitle } from "@/components/ui/section-title";
 
 interface ExperienceProps {
