@@ -5,4 +5,4 @@ export const iconRegistry = {
   download: Download,
   github: FaGithub,
   linkedin: FaLinkedin,
-};
+} as const;

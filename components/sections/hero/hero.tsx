@@ -1,6 +1,6 @@
 import { Profile } from "@/types/profile";
 import { Section } from "@/components/ui/section";
-import { Container } from "@/components/ui/container";
+import { Container } from "@/components/shared/container/container";
 import { HeroStats } from "./hero-stats";
 import { HeroActions } from "./hero-actions";
 
@@ -11,7 +11,7 @@ interface HeroProps {
 export function Hero({ data }: HeroProps) {
   return (
     <Section className="min-h-screen flex items-center">
-      <Container>
+      <Container size="md" className="flex flex-col items-start gap-6">
         <div className="max-w-5xl space-y-3">
           <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
             {data.hero.greeting}
