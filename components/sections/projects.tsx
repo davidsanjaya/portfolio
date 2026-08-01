@@ -14,7 +14,7 @@ export function Projects({ items }: ProjectsProps) {
       <Container>
         <SectionTitle eyebrow="Projects" title="Selected work." />
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="mt-12 grid gap-8 lg:grid-cols-2">
           {items.map((project) => (
             <ProjectCard key={project.name} project={project} />
           ))}
