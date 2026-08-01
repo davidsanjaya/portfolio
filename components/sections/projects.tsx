@@ -1,6 +1,8 @@
 import { Section } from "@/components/shared/section/section";
 import { Project } from "@/types/projects";
-import { SectionTitle } from "../ui/section-title";
+import { SectionTitle } from "@/components/shared/section-title/section-title";
+import { ProjectCard } from "../ui/project-card/project-card";
+import { Container } from "../shared/container";
 
 interface ProjectsProps {
   items: Project[];
@@ -8,16 +10,16 @@ interface ProjectsProps {
 
 export function Projects({ items }: ProjectsProps) {
   return (
-    <Section>
-      <SectionTitle title="Projects" subtitle="Selected work." />
+    <Section id="project" spacing="lg">
+      <Container>
+        <SectionTitle eyebrow="Projects" title="Selected work." />
 
-      {items.map((project) => (
-        <div key={project.name}>
-          <h3>{project.name}</h3>
-
-          <p>{project.description}</p>
+        <div className="grid gap-8 lg:grid-cols-2">
+          {items.map((project) => (
+            <ProjectCard key={project.name} project={project} />
+          ))}
         </div>
-      ))}
+      </Container>
     </Section>
   );
 }

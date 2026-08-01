@@ -1,6 +1,6 @@
 import { Section } from "@/components/shared/section/section";
 import { SkillCategory } from "@/types/skills";
-import { SectionTitle } from "../ui/section-title";
+import { SectionTitle } from "@/components/shared/section-title/section-title";
 
 interface SkillsProps {
   items: SkillCategory[];
@@ -9,7 +9,7 @@ interface SkillsProps {
 export function Skills({ items }: SkillsProps) {
   return (
     <Section>
-      <SectionTitle title="Skills" />
+      <SectionTitle eyebrow="Skills" title="My expertise." />
 
       {items.map((category) => (
         <div key={category.title}>

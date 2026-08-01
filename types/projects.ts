@@ -8,4 +8,7 @@ export interface Project {
   technologies: string[];
 
   highlights: string[];
+
+  githubUrl?: string;
+  demoUrl?: string;
 }

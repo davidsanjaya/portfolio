@@ -1,6 +1,9 @@
+import { Container } from "@/components/shared/container";
+import { Section } from "@/components/shared/section";
+import { SectionTitle } from "@/components/shared/section-title/section-title";
+import { ExperienceCard } from "@/components/ui/experience-card/experience-card";
+
 import { Experience as ExperienceData } from "@/types/experience";
-import { Section } from "@/components/shared/section/section";
-import { SectionTitle } from "@/components/ui/section-title";
 
 interface ExperienceProps {
   items: ExperienceData[];
@@ -8,20 +11,23 @@ interface ExperienceProps {
 
 export function Experience({ items }: ExperienceProps) {
   return (
-    <Section>
-      <SectionTitle title="Experience" subtitle="My professional journey." />
+    <Section id="experience" spacing="lg">
+      <Container>
+        <SectionTitle
+          eyebrow="Career"
+          title="Experience"
+          description="My professional journey building enterprise web applications."
+        />
 
-      {items.map((experience) => (
-        <div key={experience.company}>
-          <h3>{experience.company}</h3>
-
-          <p>{experience.role}</p>
-
-          <p>
-            {experience.startDate} - {experience.endDate}
-          </p>
+        <div className="mt-12 flex flex-col gap-6">
+          {items.map((experience) => (
+            <ExperienceCard
+              key={`${experience.company}-${experience.startDate}`}
+              experience={experience}
+            />
+          ))}
         </div>
-      ))}
+      </Container>
     </Section>
   );
 }
