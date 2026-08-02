@@ -7,7 +7,7 @@ interface HeroStatsProps {
 
 export function HeroStats({ statistics }: HeroStatsProps) {
   return (
-    <div className="grid gap-4 sm:grid-cols-3">
+    <div className="grid gap-4 sm:grid-cols-3 mt-4">
       {statistics.map((stat) => (
         <StatisticCard key={stat.label} value={stat.value} label={stat.label} />
       ))}

@@ -3,6 +3,7 @@ rounded-2xl
 bg-card
 transition-all
 duration-200
+max-w-5xl
 `;
 
 export const cardPadding = {

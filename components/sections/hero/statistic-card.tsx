@@ -22,7 +22,7 @@ export function StatisticCard({ value, label }: StatisticCardProps) {
         mt-2
         text-sm
         uppercase
-        tracking-wide
+        tracking-[0.2em]
         text-muted-foreground
     "
       >

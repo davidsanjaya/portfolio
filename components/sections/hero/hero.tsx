@@ -12,26 +12,29 @@ interface HeroProps {
 
 export function Hero({ data, spacing }: HeroProps) {
   return (
-    <Section spacing={spacing} className="min-h-screen flex items-center">
+    <Section
+      spacing={spacing}
+      className="min-h-screen flex justify-start pt-20 lg:justify-center lg:pt-0"
+    >
       <Container size="md" className="flex flex-col items-start gap-6">
-        <div className="max-w-5xl space-y-3">
+        <div className="max-w-5xl space-y-4">
           <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
             {data.hero.greeting}
           </p>
 
-          <h1 className="text-7xl font-black tracking-tight text-foreground">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight text-foreground">
             {data.hero.name}
           </h1>
 
-          <h2 className="text-3xl font-semibold text-primary">
+          <h2 className="text-2xl lg:text-3xl font-semibold text-primary">
             {data.hero.title}
           </h2>
 
-          <p className="text-xl font-medium text-muted-foreground">
+          <p className="text-lg sm:text-xl font-medium text-muted-foreground">
             {data.hero.tagline}
           </p>
 
-          <p className="max-w-3xl text-lg leading-8 text-muted-foreground">
+          <p className="max-w-2xl lg:max-w-3xl text-lg leading-8 text-muted-foreground">
             {data.hero.description}
           </p>
 

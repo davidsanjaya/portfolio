@@ -6,7 +6,12 @@ import { experienceCardStyles } from "./experience-card.styles";
 
 export function ExperienceCard({ experience }: ExperienceCardProps) {
   return (
-    <Card hover padding="lg" variant="ghost">
+    <Card
+      hover
+      padding="lg"
+      variant="ghost"
+      className={experienceCardStyles.card}
+    >
       <header className={experienceCardStyles.header}>
         <div className={experienceCardStyles.headerContent}>
           <h3 className={experienceCardStyles.company}>{experience.company}</h3>
