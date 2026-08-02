@@ -1,6 +1,4 @@
-const base = `
-w-full
-`;
+const base = "w-full";
 
 export const sectionSpacing = {
   sm: `${base} py-12`,

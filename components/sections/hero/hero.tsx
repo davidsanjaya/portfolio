@@ -3,14 +3,16 @@ import { Section } from "@/components/shared/section/section";
 import { Container } from "@/components/shared/container/container";
 import { HeroStats } from "./hero-stats";
 import { HeroActions } from "./hero-actions";
+import { SectionSpacing } from "@/components/shared/section/section.types";
 
 interface HeroProps {
   data: Profile;
+  spacing?: SectionSpacing;
 }
 
-export function Hero({ data }: HeroProps) {
+export function Hero({ data, spacing }: HeroProps) {
   return (
-    <Section spacing="md" className="min-h-screen flex items-center">
+    <Section spacing={spacing} className="min-h-screen flex items-center">
       <Container size="md" className="flex flex-col items-start gap-6">
         <div className="max-w-5xl space-y-3">
           <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">

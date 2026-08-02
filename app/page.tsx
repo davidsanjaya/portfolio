@@ -8,13 +8,13 @@ import { portfolio } from "@/data/portfolio";
 export default function Home() {
   return (
     <>
-      <Hero data={portfolio.profile} />
+      <Hero spacing="xl" data={portfolio.profile} />
 
-      <Experience items={portfolio.experiences} />
+      <Experience items={portfolio.experiences} spacing="lg" />
 
-      <Projects items={portfolio.projects} />
+      <Projects items={portfolio.projects} spacing="lg" />
 
-      <Skills items={portfolio.skillCategories} />
+      <Skills items={portfolio.skillCategories} spacing="lg" />
     </>
   );
 }

@@ -18,8 +18,6 @@ export function SectionTitle({
   return (
     <div
       className={cn(
-        "flex flex-col gap-3",
-
         centered ? titleAlignment.center : titleAlignment.left,
 
         className,
@@ -32,10 +30,10 @@ export function SectionTitle({
         </p>
       )}
 
-      <h2 className="text-5xl font-black tracking-tight">{title}</h2>
+      <h2 className="mt-2 text-5xl font-black tracking-tight">{title}</h2>
 
       {description && (
-        <p className="max-w-2xl text-lg leading-8 text-muted-foreground">
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-muted-foreground">
           {description}
         </p>
       )}

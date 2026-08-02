@@ -4,7 +4,7 @@ export const skillCategoryCardStyles = {
     `,
 
   category: `
-        text-xl
+        text-2xl
         font-bold
     `,
 
@@ -26,5 +26,6 @@ export const skillCategoryCardStyles = {
         text-muted-foreground
         transition-colors
         hover:bg-accent
+        hover:border-primary
     `,
 };
