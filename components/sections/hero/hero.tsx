@@ -14,7 +14,11 @@ export function Hero({ data, spacing }: HeroProps) {
   return (
     <Section
       spacing={spacing}
-      className="min-h-screen flex justify-start pt-20 lg:justify-center lg:pt-0"
+      className="
+min-h-[90vh]
+flex
+items-center
+"
     >
       <Container size="md" className="flex flex-col items-start gap-6">
         <div className="max-w-5xl space-y-4">

@@ -1,8 +1,8 @@
 const base = "w-full";
 
 export const sectionSpacing = {
-  sm: `${base} py-12`,
-  md: `${base} py-20`,
-  lg: `${base} py-28`,
-  xl: `${base} py-36`,
+  sm: `${base} py-8`,
+  md: `${base} py-16`,
+  lg: `${base} py-20`,
+  xl: `${base} py-24`,
 };
