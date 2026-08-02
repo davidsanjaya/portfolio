@@ -19,16 +19,17 @@ export const projectCardStyles = {
 
   description: `
         mt-6
-        leading-7
-        text-muted-foreground
+        text-base
+leading-7
+text-muted-foreground
     `,
 
   highlights: `
-        mt-8
+        mt-10
     `,
 
   highlightsTitle: `
-        text-xs
+        text-sm
         font-semibold
         uppercase
         tracking-[0.2em]
@@ -57,22 +58,29 @@ export const projectCardStyles = {
     `,
 
   technologies: `
-        flex
-        flex-wrap
-        gap-2
-    `,
+    flex
+    flex-wrap
+    justify-start
+    gap-x-2
+    gap-y-2
+`,
 
   badge: `
-        rounded-full
-        border
-        border-border
-        bg-muted/40
-        px-3
-        py-1
-        text-sm
-        font-medium
-        text-muted-foreground
-        transition-colors
-        hover:bg-accent
-    `,
+    whitespace-nowrap
+    rounded-full
+    border
+    border-border
+    bg-muted/40
+    px-2
+    py-1
+    text-[11px]
+
+    sm:px-3
+    sm:text-sm
+
+    font-medium
+    text-muted-foreground
+    transition-colors
+    hover:bg-accent
+`,
 };
