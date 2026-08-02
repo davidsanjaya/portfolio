@@ -15,17 +15,26 @@ export const skillCategoryCardStyles = {
     `,
 
   badge: `
-        rounded-full
-        border
-        border-border
-        bg-muted/40
-        px-3
-        py-1
-        text-sm
-        font-medium
-        text-muted-foreground
-        transition-colors
-        hover:bg-accent
-        hover:border-primary
-    `,
+  break-normal
+  sm:whitespace-nowrap
+
+  rounded-full
+  border
+  border-border
+
+  bg-muted/40
+
+  px-2
+  py-1
+  text-xs
+
+  sm:px-3
+  sm:text-sm
+
+  font-medium
+  text-muted-foreground
+
+  transition-colors
+  hover:bg-accent
+`,
 };
