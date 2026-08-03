@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://davidsanjaya.dev/sitemap.xml",
+    sitemap: "https://portfolio-one-dusky-91.vercel.app/sitemap.xml",
   };
 }
