@@ -4,6 +4,7 @@ import { Projects } from "@/components/sections/projects";
 import { Skills } from "@/components/sections/skills";
 
 import { portfolio } from "@/data/portfolio";
+import { Contact } from "@/components/sections/contact/contact";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
       <Projects items={portfolio.projects} spacing="lg" />
 
       <Skills items={portfolio.skillCategories} spacing="lg" />
+
+      <Contact data={portfolio.contact} />
     </>
   );
 }
