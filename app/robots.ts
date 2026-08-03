@@ -7,5 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
     sitemap: "https://davidsanjaya.vercel.app/sitemap.xml",
+    host: "https://davidsanjaya.vercel.app",
   };
 }
