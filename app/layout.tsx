@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 import { Inter } from "next/font/google";
 
@@ -19,9 +8,44 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "David Sanjaya | Frontend Software Engineer",
+  title: "David Sanjaya | Senior Frontend Software Engineer",
   description:
-    "Frontend Software Engineer specializing in Blazor, React, Next.js, and responsive enterprise applications.",
+    "Senior Frontend Software Engineer with 11+ years of experience building scalable enterprise applications using Blazor, React, Next.js, TypeScript, and C#.",
+  keywords: [
+    "David Sanjaya",
+    "Frontend Engineer",
+    "Senior Frontend Engineer",
+    "Frontend Developer",
+    "Blazor",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "C#",
+    "Portfolio",
+  ],
+  authors: [
+    {
+      name: "David Sanjaya",
+    },
+  ],
+  creator: "David Sanjaya",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  themeColor: "#2563eb",
+  metadataBase: new URL("https://davidsanjaya.com"),
+  openGraph: {
+    title: "David Sanjaya",
+    description: "Senior Frontend Software Engineer",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -30,10 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`h-full antialiased`}>
       <body className={inter.className}>{children}</body>
     </html>
   );
