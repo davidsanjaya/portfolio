@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   themeColor: "#2563eb",
-  metadataBase: new URL("https://davidsanjaya.com"),
+  metadataBase: new URL("https://davidsanjaya.vercel.app"),
   openGraph: {
     title: "David Sanjaya",
     description: "Senior Frontend Software Engineer",
