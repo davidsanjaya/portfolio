@@ -6,13 +6,13 @@ export const profile: Profile = {
 
     name: "David Sanjaya",
 
-    title: "Senior Frontend Software Engineer",
+    title: "Frontend Developer",
 
     tagline:
       "Building scalable enterprise applications with Blazor, React, and Next.js.",
 
     description:
-      "Frontend Software Engineer with 11+ years of experience building enterprise web applications using Blazor, React, Next.js, TypeScript, and C#. Experienced in modern UI architecture, reusable component libraries, API integration, and responsive design while working in Agile Scrum environments.",
+      "Frontend developer with 5+ years of experience building enterprise web applications. My background spans React, Next.js, TypeScript, Blazor, and C#. I enjoy designing maintainable UI architectures, creating reusable component libraries, and collaborating closely with designers, product owners, and backend teams. Over the years I've worked across multiple industries and helped deliver applications used by internal business teams and enterprise customers.",
   },
 
   contact: {
@@ -50,15 +50,15 @@ export const profile: Profile = {
   ],
   statistics: [
     {
-      value: "11+",
+      value: "5+",
       label: "Years Experience",
     },
     {
-      value: "Multiple",
-      label: "Enterprise Projects",
+      value: "10+",
+      label: "Projects Delivered",
     },
     {
-      value: "5",
+      value: "3",
       label: "Companies",
     },
   ],

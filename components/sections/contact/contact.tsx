@@ -14,7 +14,7 @@ export function Contact({ data }: ContactProps) {
       <Container>
         <SectionTitle eyebrow={data.title} title={data.heading} />
         <div className="max-w-2xl space-y-8">
-          <p className="text-lg text-muted-foreground leading-8">
+          <p className="text-lg text-muted-foreground leading-8 pt-4">
             {data.description}
           </p>
 

@@ -14,7 +14,7 @@ export const projectCardStyles = {
   name: `
         text-2xl
         font-bold
-        text-foreground
+        text-white
     `,
 
   description: `
@@ -45,6 +45,7 @@ text-muted-foreground
         flex
         items-start
         gap-3
+        text-muted-foreground
     `,
 
   icon: `
@@ -79,7 +80,7 @@ text-muted-foreground
     sm:text-sm
 
     font-medium
-    text-muted-foreground
+    text-white
     transition-colors
     hover:bg-accent
 `,

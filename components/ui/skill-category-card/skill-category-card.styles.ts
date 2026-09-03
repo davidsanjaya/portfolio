@@ -6,6 +6,7 @@ export const skillCategoryCardStyles = {
   category: `
         text-2xl
         font-bold
+        text-white
     `,
 
   badges: `
@@ -32,7 +33,7 @@ export const skillCategoryCardStyles = {
   sm:text-sm
 
   font-medium
-  text-muted-foreground
+  text-white
 
   transition-colors
   hover:bg-accent

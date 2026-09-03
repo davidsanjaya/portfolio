@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
-const inter = Inter({
+const dmSans = DM_Sans({
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "David Sanjaya | Senior Frontend Software Engineer",
+  title: "David Sanjaya | Frontend Developer",
   description:
-    "Senior Frontend Software Engineer with 11+ years of experience building scalable enterprise applications using Blazor, React, Next.js, TypeScript, and C#.",
+    "Frontend Developer with 5+ years of experience building scalable enterprise applications using Blazor, React, Next.js, TypeScript, and C#.",
   keywords: [
     "David Sanjaya",
-    "Frontend Engineer",
-    "Senior Frontend Engineer",
     "Frontend Developer",
     "Blazor",
     "React",
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://davidsanjaya.vercel.app"),
   openGraph: {
     title: "David Sanjaya",
-    description: "Senior Frontend Software Engineer",
+    description: "Frontend Developer",
     images: [
       {
         url: "/opengraph-image.png",
@@ -58,7 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`h-full antialiased`}>
-      <body className={inter.className}>{children}</body>
+      <body className={dmSans.className}>{children}</body>
     </html>
   );
 }

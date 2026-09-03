@@ -30,7 +30,9 @@ export function SectionTitle({
         </p>
       )}
 
-      <h2 className="mt-2 text-5xl font-black tracking-tight">{title}</h2>
+      <h2 className="mt-2 text-5xl font-black text-white tracking-tight">
+        {title}
+      </h2>
 
       {description && (
         <p className="mt-4 max-w-3xl text-lg leading-8 text-muted-foreground">

@@ -7,7 +7,7 @@ interface HeroActionProps {
 
 export function HeroActions({ actions }: HeroActionProps) {
   return (
-    <div className="grid gap-4 sm:grid-cols-3 py-6 items-center">
+    <div className="grid gap-4 sm:grid-cols-1 py-6 items-center">
       {actions.map((action) => (
         <Button
           key={action.label}

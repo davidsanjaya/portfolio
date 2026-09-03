@@ -7,12 +7,12 @@ interface StatisticCardProps {
 
 export function StatisticCard({ value, label }: StatisticCardProps) {
   return (
-    <Card padding="md" hover variant="outlined">
+    <Card padding="md" variant="ghost">
       <h3
         className="
         text-5xl
         font-black
-        text-card-foreground
+        text-white
     "
       >
         {value}

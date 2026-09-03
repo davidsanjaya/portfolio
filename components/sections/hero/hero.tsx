@@ -1,7 +1,6 @@
 import { Profile } from "@/types/profile";
 import { Section } from "@/components/shared/section/section";
 import { Container } from "@/components/shared/container/container";
-import { HeroStats } from "./hero-stats";
 import { HeroActions } from "./hero-actions";
 import { SectionSpacing } from "@/components/shared/section/section.types";
 
@@ -15,9 +14,11 @@ export function Hero({ data, spacing }: HeroProps) {
     <Section
       spacing={spacing}
       className="
-min-h-[90vh]
-flex
-items-center
+lg:sticky
+    lg:top-0
+    lg:h-screen
+    flex
+    items-center
 "
     >
       <Container size="md" className="flex flex-col items-start gap-6">
@@ -26,7 +27,7 @@ items-center
             {data.hero.greeting}
           </p>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight text-foreground">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight text-white">
             {data.hero.name}
           </h1>
 
@@ -38,13 +39,7 @@ items-center
             {data.hero.tagline}
           </p>
 
-          <p className="max-w-2xl lg:max-w-3xl text-lg leading-8 text-muted-foreground">
-            {data.hero.description}
-          </p>
-
           <HeroActions actions={data.actions} />
-
-          <HeroStats statistics={data.statistics} />
         </div>
       </Container>
     </Section>

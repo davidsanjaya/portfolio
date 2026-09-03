@@ -4,6 +4,9 @@ bg-card
 transition-all
 duration-200
 max-w-5xl
+bg-slate-900/60
+border border-slate-800
+backdrop-blur-sm
 `;
 
 export const cardPadding = {
@@ -28,7 +31,6 @@ export const cardVariant = {
         ${base}
         bg-primary
         text-primary-foreground
-        hover:opacity-90
     `,
 
   outlined: `
@@ -36,12 +38,10 @@ export const cardVariant = {
         border
         border-border
         text-foreground
-        hover:bg-accent
     `,
 
   ghost: `
         ${base}
         text-foreground
-        hover:bg-accent
     `,
 };

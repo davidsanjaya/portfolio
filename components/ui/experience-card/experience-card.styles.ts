@@ -2,7 +2,9 @@ export const experienceCardStyles = {
   card: `
         border
         shadow-sm
-        hover:shadow-lg
+        bg-slate-900/60
+border border-slate-800
+backdrop-blur-sm
     `,
 
   header: `
@@ -22,6 +24,7 @@ export const experienceCardStyles = {
         text-3xl
         font-bold
         tracking-tight
+        text-white
     `,
 
   role: `
@@ -67,6 +70,7 @@ export const experienceCardStyles = {
         flex
         items-start
         gap-3
+        text-muted-foreground
     `,
 
   icon: `
@@ -101,8 +105,7 @@ export const experienceCardStyles = {
     sm:text-sm
 
     font-medium
-    text-muted-foreground
+    text-white
     transition-colors
-    hover:bg-accent
 `,
 };
