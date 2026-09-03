@@ -2,6 +2,7 @@ const base = `
 mx-auto
 w-full
 px-6
+lg:px-8
 `;
 
 export const containerSizes = {

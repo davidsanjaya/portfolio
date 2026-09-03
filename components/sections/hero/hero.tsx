@@ -21,7 +21,7 @@ lg:sticky
     items-center
 "
     >
-      <Container size="md" className="flex flex-col items-start gap-6">
+      <Container size="md" className="flex flex-col items-start gap-6 lg:gap-8">
         <div className="max-w-5xl space-y-4">
           <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
             {data.hero.greeting}

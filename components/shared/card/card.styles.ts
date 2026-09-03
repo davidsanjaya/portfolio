@@ -1,12 +1,13 @@
 const base = `
-rounded-2xl
-bg-card
-transition-all
-duration-200
-max-w-5xl
-bg-slate-900/60
-border border-slate-800
-backdrop-blur-sm
+  w-full
+  max-w-5xl
+  rounded-2xl
+  bg-card
+  transition-all
+  duration-200
+  bg-slate-900/60
+  border border-slate-800
+  backdrop-blur-sm
 `;
 
 export const cardPadding = {

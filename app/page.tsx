@@ -10,7 +10,16 @@ import { About } from "@/components/sections/about/about";
 export default function Home() {
   return (
     <>
-      <div className="grid lg:grid-cols-[520px_1fr] bg-linear-to-b from-slate-950 via-black to-slate-900">
+      <div
+        className="
+        w-full
+    grid
+    lg:grid-cols-[520px_1fr]
+    bg-linear-to-b
+    from-slate-950
+    via-black
+    to-slate-900"
+      >
         <Hero spacing="xl" data={portfolio.profile} />
 
         <main>
