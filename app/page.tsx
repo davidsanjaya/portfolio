@@ -13,8 +13,8 @@ export default function Home() {
       <div
         className="
         w-full
-    grid
-    lg:grid-cols-[520px_1fr]
+        lg:grid
+    grid-cols-2
     bg-linear-to-b
     from-slate-950
     via-black
